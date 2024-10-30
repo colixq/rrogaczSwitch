@@ -1,0 +1,51 @@
+switch(task) {
+    case "5":
+        inputsDiv.innerHTML = `
+            <label for="months">Ilość miesięcy (X):</label>
+            <input type="number" id="months" placeholder="np. 12">
+            <label for="savings">Kwota oszczędności (Y):</label>
+            <input type="number" id="savings" placeholder="np. 100">
+        `;
+        break;
+    case "6":
+        inputsDiv.innerHTML = `
+            <label for="firstTerm">Pierwszy element:</label>
+            <input type="number" id="firstTerm" value="5">
+            <label for="numberOfTerms">Liczba elementów:</label>
+            <input type="number" id="numberOfTerms" value="100">
+        `;
+        break;
+    case "8":
+        inputsDiv.innerHTML = `
+            <label for="base">Podstawa ściany (X):</label>
+            <input type="number" id="base">
+            <label for="height">Wysokość (Y):</label>
+            <input type="number" id="height">
+            <label for="decrement">O ile krótszy każdy rząd (Z):</label>
+            <input type="number" id="decrement">
+        `;
+        break;
+    case "9":
+        inputsDiv.innerHTML = `
+            <label for="bricksInWall">Ilość cegieł w ścianie (X):</label>
+            <input type="number" id="bricksInWall">
+            <label for="weight">Waga cegły (K kg):</label>
+            <input type="number" id="weight">
+        `;
+        break;
+    case "10":
+        inputsDiv.innerHTML = `
+            <label for="num1">Pierwsza liczba:</label>
+            <input type="number" id="num1">
+            <label for="num2">Druga liczba:</label>
+            <input type="number" id="num2">
+            <label for="operation">Wybierz operację:</label>
+            <select id="operation">
+                <option value="add">Dodawanie</option>
+                <option value="subtract">Odejmowanie</option>
+                <option value="multiply">Mnożenie</option>
+                <option value="divide">Dzielenie</option>
+            </select>
+        `;
+        break;
+}

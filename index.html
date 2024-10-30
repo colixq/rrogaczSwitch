@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaktywny Kalkulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Interaktywny Kalkulator</h1>
+
+    <label for="task">Wybierz zadanie:</label>
+    <select id="task" onchange="showInputs()">
+        <option value="">-- Wybierz zadanie --</option>
+        <option value="1">10 kolejnych liczb od 1</option>
+        <option value="2">10 kolejnych liczb od 10 malejąco</option>
+        <option value="3">Suma 10 liczb od 1</option>
+        <option value="4">10 kolejnych liczb parzystych od 2</option>
+        <option value="5">Kwota zgromadzona przez pracownika</option>
+        <option value="6">Suma elementów ciągu arytmetycznego</option>
+        <option value="7">Ilość cegieł w piramidzie</option>
+        <option value="8">Ilość cegieł w ścianie</option>
+        <option value="9">Waga ściany</option>
+        <option value="10">Prosty kalkulator</option>
+        <option value="11">Ciąg arytmetyczny N elementów</option>
+        <option value="12">Suma dwóch liczb</option>
+        <option value="13">Silnia liczby</option>
+        <option value="14">Ciąg kwadratów liczb</option>
+        <option value="15">Suma i średnia 10 losowych liczb</option>
+    </select>
+
+    <div id="inputs"></div>
+
+    <button onclick="calculate()">Wykonaj</button>
+
+    <div class="result" id="result">Wynik pojawi się tutaj...</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
